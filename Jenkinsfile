@@ -12,7 +12,7 @@ pipeline {
                 expression { env.BRANCH_NAME.startsWith('PR-') }
             }
             steps {               
-				sh "/home/mukhersi/softwares/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner -Dsonar.analysis.mode=preview -Dsonar.github.oauth=3dd50fb06e511cf3b5ed91b97b208fade3a12174 -Dsonar.github.repository=mukhersi/gpss-telematics -Dsonar.github.pullRequest=4 -X"
+				sh "/home/mukhersi/softwares/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner -Dsonar.analysis.mode=preview -Dsonar.github.oauth=7a444fa2da4492286420993cedc80b8d8c2ebc1a -Dsonar.github.repository=sidd9433/machine_learning_examples  -Dsonar.github.pullRequest=1 -X"
             }
         }
         stage('Sonar Scan') {
